@@ -6,3 +6,480 @@
     box-sizing: border-box;
     font-family:"Poppins", sans-serif;
 }
+body {
+    background: var(--color-body);
+}
+header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 10vh;
+    /* background: green; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 2em;
+}
+
+header .menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 1em;
+}
+header .menu ul li{
+    list-style: none;
+}
+header .menu ul li button {
+    background: transparent;
+    border: none;
+    padding: .5em;
+}
+
+header .menu ul li button a {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-size: 1.4em;
+}
+header p{
+    color: var(--color-primary);
+    font-size: 2em;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+}
+.menuDisplay {
+    opacity: 0;
+    position: relative;
+    top: 0;
+    right: 0;
+    margin: 1em 1em 0 0;
+}
+#home {
+    
+    display: flex;
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+#home .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+#home .container .text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70vh;
+    /* background: green; */
+    justify-content: center;
+    padding-left:20%;
+
+}
+#home .container .text .home__title{
+    color: var(--color-primary);
+    word-spacing: 0px;
+    font-size:4em;
+}
+#home .container .text p{
+    color: var(--color-secundary);
+    font-size:1.5em;
+    word-spacing:5px ;
+
+}
+#home .container .text button{
+    color: var(--color-secundary);
+    background: var(--color-primary);
+    padding: 0.5em;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1em;
+    word-spacing: 0.5em;
+    margin-top:0.7em ;
+    width: 250px;
+    word-spacing:5px;
+
+}
+#home .container .img {
+    display: flex;
+    /* background: blue; */
+    width: 50%;
+    height: 70vh;
+    justify-content:flex-start;  
+}
+#home .container .img img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+#aboutUs {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#aboutUs .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    justify-content: space-evenly;
+}
+#aboutUs .container .text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 70vh;
+    /* background: green; */
+    justify-content: center;
+    align-items: center;
+    padding-right:18%;
+    padding-left: 2%;
+
+}
+#aboutUs .container .text .aboutUs__title{
+    color: var(--color-primary);
+    word-spacing: 0px;
+    font-size:1.3em;
+    text-transform: capitalize;
+    align-self: start;
+}
+#aboutUs .container .text .aboutUs__text1{
+    word-spacing: 0px;
+    font-size:3em;
+    align-self: start;
+    word-spacing: .3em;
+}
+#aboutUs .container .text p{
+    color: var(--color-secundary);
+    font-size:1.2em;
+    word-spacing: .1em;
+    word-spacing:5px ;
+    align-self: start;
+}
+#aboutUs .container .text button{
+    color: var(--color-secundary);
+    background: var(--color-primary);
+    padding: 0.5em;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1em;
+    word-spacing: 0.5em;
+    margin-top:0.7em ;
+    width: 200px;
+    word-spacing:5px;
+    align-self: start;
+
+}
+#aboutUs .container .img {
+    display: flex;
+    /* background: blue; */
+    width: 50%;
+    height: 70vh;
+    justify-content:center;  
+    align-items: center;
+    padding-left: 20%;
+}
+#aboutUs .container .img img {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+#foodMenu {
+    width: 100%;
+    height: 100vh;
+}
+#foodMenu .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    width: 100%;
+    padding-top: .9rem;
+}
+#foodMenu .text .foodMenu__title {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    word-spacing: .2em;
+    color: var(--color-primary);
+}
+#foodMenu .text .foodMenu__text {
+    font-size: 3em;
+    color: var(--color-secundary);
+    word-spacing: .3em;
+}
+#foodMenu .cards__container {
+    /* background: var(--color-secundary); */
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
+    padding-bottom: 10%;
+    overflow: scroll;
+}
+#foodMenu .card {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    background: var(--color-cuaternario);
+}
+
+#foodMenu .card .card__image{
+    width: 21.875em;
+    height: 21.875em;
+}
+#foodMenu .card .card__image img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+#foodMenu .card .card__icon {
+    font-size: 20px;
+    background: var(--color-primary);
+    width: 40px;
+    height: 40px;
+    padding: .2em;
+    align-self: flex-end;
+}
+#foodMenu .card .card__text .name{
+    font-size: 1.3em;
+    word-spacing: .4em;
+}
+#foodMenu .card .card__text .description{
+    font-size: 1em;
+    word-spacing: .4em;
+}
+#foodMenu .card .card__text .price{
+    font-size: 1em;
+    color: var(--color-primary);
+    margin-bottom: 1em;
+}
+#services {
+    width: 100%;
+    height: 100vh;
+}
+#services .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    height: 30vh;
+    width: 100%;
+    padding-top: .9rem;
+}
+#services .text .services__title {
+    font-size: 1.2em;
+    text-transform: capitalize;
+    word-spacing: .2em;
+    color: var(--color-primary);
+}
+#services .text .services__text {
+    font-size: 3em;
+    color: var(--color-secundary);
+    word-spacing: .3em;
+}
+#services .cards__container {
+    /* background: var(--color-secundary); */
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    padding-bottom: 10%;
+    overflow: scroll;
+}
+#services .card {
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    justify-content: center;
+}
+
+#services .card .card__image{
+    width: 15.625em;
+    height: 15.625em;
+    margin-bottom: .8em;
+    display: flex;
+}
+#services .card .card__image img{
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 25%;
+}
+
+#services .card .card__text .name {
+    color: var(--color-primary);
+    font-size: 2em;
+    margin-bottom: .5em;
+}
+#services .card .card__text .description {
+    color: var(--color-secundary);
+    font-size: 1.2em;
+    text-align: center;
+    word-spacing: .2em;
+
+}
+#lastPage {
+width: 100%;
+height: 100vh;
+}
+#lastPage .banner{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+}
+#lastPage .banner .banner__content {
+    width: 85%;
+    height: 85%;
+    background: var(--color-cuaternario);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#lastPage .banner .banner__content p{
+    font-size: 3.2em;
+    word-spacing: .1em;
+    margin-bottom: 1.5em;
+}
+#lastPage .banner .banner__content button {
+    color: var(--color-secundary);
+    background: var(--color-primary);
+    width: 10.4em;
+    height: auto;
+    padding: .3em .5em;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    word-spacing:5px;
+}
+footer{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5em;
+    align-items: center;
+}
+footer .box1 ul {
+    padding-top: 1.2em;
+    list-style: none;
+}
+footer .box1 ul li a {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-size: 1.2em;
+}
+footer .box2 ul {
+    padding-top: 1.2em;
+    list-style: none;
+}
+footer .box2 ul li p {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-size: 1.2em;
+}
+footer .box3 ul {
+    list-style: none;
+    padding-bottom: 2em;
+    margin-top: 1.2em;
+}
+footer .box3 ul li p {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-size: 1.2em;
+}
+
+footer .box4 ul {
+    padding: 1.4em 0 6.8em 0;
+    display: flex;
+    gap: .4em;
+    list-style: none;
+}
+footer .box4 ul li i {
+    text-decoration: none;
+    color: var(--color-secundary);
+    font-size: 1.4em;
+    background: var(--color-primary);
+    border-radius: 100%;
+    padding: .2em;
+}
+footer .title {
+    color:var(--color-secundary);
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+
+@media screen and (max-width:1000px) {
+    body {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5vh 95vh repeat(5,100vh);
+        grid-template-areas: 
+        "menu"
+        "home"
+        "abU"
+        "fM"
+        "serv"
+        "lP"
+        "foot"
+        ;
+    }
+    header {
+        grid-area: menu;
+    }
+    .menu{
+        display: none;
+    }
+    #home{
+        grid-area: home;
+        /* background: red; */
+    }
+    #home .container{ 
+
+    }
+    #home .container .text {
+
+    }
+    #home .container .text p {
+        font-size: 1.2em;
+    }
+    #home .container .text .home__title{
+        font-size: 2.5em;
+    }
+
+    #home .img {
+        width: 100%;
+        height: 50vh;
+    }
+    #aboutUs{
+        grid-area: abU;
+    }
+    #foodMenu{
+        grid-area: fM;
+    }
+    #services{
+        grid-area: serv;
+    }
+    #lastpage{
+        grid-area: lP;
+    }
+    footer {
+        grid-area: foot;
+    }
+}
