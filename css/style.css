@@ -748,3 +748,33 @@ footer .title:after{
         align-self: center;
     }
 }
+@media screen and (max-width:700px){
+    body {
+        font-size: 14px;
+    }
+    #foodMenu .cards__container .card .card__image {
+        width: 14em;
+        height: auto;
+    }
+    #foodMenu .cards__container .card .card__image img {
+        object-fit: contain;
+        width: 70%;
+    }
+    #services .cards__container .card{
+        display: flex;
+        flex-direction: center;
+        align-items: center;
+    }
+    #services .cards__container .card .card__image {
+        width:14em;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+    }
+    #services .cards__container .card .card__image img {
+        object-fit: contain;
+        width: 60%;
+        padding-left: 0;
+    }
+    
+}
