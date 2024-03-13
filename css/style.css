@@ -13,11 +13,13 @@ body{
 }
 /*****MENU*****/
 .menu{
+    padding-top:3em ;
     width: 100%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: flex-end;
     gap: 1em;
 }
 .menu ul {
@@ -27,25 +29,36 @@ body{
     list-style: none;
 }
 
+.car {
+    margin-top: 10em;
+}
+.menu__footer {
+    margin-top: 5em;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    width: 95%;
+    height: 95vh;
+    background: red;
+
 }
 .container .cards__container {
+    background: green;
     display: flex;
     flex-flow:row wrap ;
     overflow-y: scroll;
-    justify-content: center;
     align-items: center;
-    padding: 1em;
-    gap: .8em;
-    height: 100vh;
+    gap: 2em;
+    height:100vh;
+    width:100%;
 
 }
 .container .cards__container .card{
-    background: red;
-    width: 30%;
-    height: 30%;
+    background: blue;
+    width: 310px;
+    height: 25.375em;
     display: flex;
     flex-direction: column;
     justify-content: center;
