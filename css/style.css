@@ -486,8 +486,13 @@ footer .title:after{
         overflow: hidden;
         background-color: var( --color-menuMovil);
         transition: height 0.3s ease;
-        gap: .5em;
+        gap: 1em;
     }
+    .menu2 ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    } 
     .menu2 ul li {
         list-style: none;
     } 
@@ -498,7 +503,7 @@ footer .title:after{
     .menu2 ul li button a{
         text-decoration: none;
         color:var(--color-secundary) ;
-        font-size: 3em;
+        font-size: 2.4em;
         font-weight: 500;
     } 
     .menu{
@@ -514,7 +519,7 @@ footer .title:after{
     }
 
     .menu__toggle:checked + .menu2 {
-        height: 50vh;
+        height: 58vh;
     }
 
     #home{
