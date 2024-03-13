@@ -28,7 +28,12 @@ header {
     align-items: center;
     padding: 1em 2em;
 }
-
+.menu__toggle {
+    display: none;
+}
+.menu2 {
+    display: none;
+}
 header .menu ul {
     display: flex;
     flex-direction: row;
@@ -48,6 +53,12 @@ header .menu ul li button a {
     text-decoration: none;
     color: var(--color-secundary);
     font-size: 1.4em;
+    font-weight: 500;
+}
+header .menu ul li button:hover {
+
+    color: var(--color-primary);
+
 }
 header p{
     color: var(--color-primary);
@@ -190,8 +201,8 @@ header p{
 }
 #aboutUs .container .img img {
     object-fit: contain;
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
 }
 #foodMenu {
     width: 100%;
@@ -428,9 +439,20 @@ footer .title {
     color:var(--color-secundary);
     font-size: 1.5em;
     text-transform: capitalize;
+    font-weight: 600;
+    padding-bottom: .2em;
+    position: relative;
+
+}
+footer .title:after{
+    content:"";
+    width: 3em;
+    height: 0.12em;
+    background: var(--color-primary);
 }
 
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:950px) {
     body {
         display: grid;
         grid-template-columns: 1fr;
@@ -464,7 +486,21 @@ footer .title {
         overflow: hidden;
         background-color: var( --color-menuMovil);
         transition: height 0.3s ease;
+        gap: .5em;
     }
+    .menu2 ul li {
+        list-style: none;
+    } 
+    .menu2 ul li button{
+        background: none;
+        border: none;
+    } 
+    .menu2 ul li button a{
+        text-decoration: none;
+        color:var(--color-secundary) ;
+        font-size: 3em;
+        font-weight: 500;
+    } 
     .menu{
         display: none;
     }
@@ -478,7 +514,7 @@ footer .title {
     }
 
     .menu__toggle:checked + .menu2 {
-        height: 40vh;
+        height: 50vh;
     }
 
     #home{
