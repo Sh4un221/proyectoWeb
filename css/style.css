@@ -9,6 +9,15 @@
 body {
     background: var(--color-body);
 }
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 header {
     display: flex;
     flex-flow: row wrap;
@@ -443,41 +452,34 @@ footer .title {
         grid-area: menu;
         display: flex;
     }
-
+    .menu2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        height: 0;
+        overflow: hidden;
+        background-color: var( --color-menuMovil);
+        transition: height 0.3s ease;
+    }
     .menu{
         display: none;
     }
+    .menu__toggle {
+        display: none;
+    }
     .menuDisplay {
-        display: block;
+        display: flex;
+        color: white;
         cursor: pointer;
     }
-    .menu ul {
-        display: block;
-        flex-direction: column;
-        gap: 1em;
-        position: absolute;
-        top: 10vh; /* Ajusta la posición vertical según tus preferencias */
-        right: 2em; /* Ajusta la posición horizontal según tus preferencias */
-        background-color: var(--color-cuaternario); /* Cambia el color de fondo según tus preferencias */
-        padding: 1em; /* Ajusta el espacio interno según tus preferencias */
-        border: 1px solid var(--color-primary); /* Añade un borde según tus preferencias */
-        border-radius: 5px; /* Ajusta el radio del borde según tus preferencias */
-        display: none; /* Inicialmente oculta el menú desplegado */
-      }
-    
-      .menu ul li {
-        list-style: none;
-      }
-    
-      .menu ul li button a {
-        text-decoration: none;
-        color: var(--color-secundary);
-        font-size: 1.4em;
-      }
-    
-      .menu ul :active {
-        display: flex; /* Muestra el menú desplegado cuando .menuDisplay tiene la clase "active" */
-      }
+
+    .menu__toggle:checked + .menu2 {
+        height: 40vh;
+    }
 
     #home{
         grid-area: home;

@@ -16,7 +16,7 @@
     <header>
         <p>Foods</p>
         <div class="menu">
-            <ul #menumneu>
+            <ul>
                 <li><button><a href="#">Home</a></button></li>
                 <li><button><a href="#aboutUs">About</a></button></li>
                 <li><button><a href="#foodMenu">Menu</a></button></li>
@@ -24,7 +24,19 @@
                 <li><button><a href="#lastPage">Contact</a></button></li>
             </ul>
         </div>
-        <button class="menuDisplay"><i class='bx bx-menu'></i></button>
+        <label for="menu__toggle" class="menuDisplay">
+            <i id="menuDisplay" class='bx bx-menu'></i>
+        </label>
+        <input type="checkbox" id="menu__toggle" class="menu__toggle" />
+        <div class="menu2">
+            <ul>
+                <li><button><a href="#">Home</a></button></li>
+                <li><button><a href="#aboutUs">About</a></button></li>
+                <li><button><a href="#foodMenu">Menu</a></button></li>
+                <li><button><a href="#services">Service</a></button></li>
+                <li><button><a href="#lastPage">Contact</a></button></li>
+            </ul>
+        </div>
     </header>
     <section id="home">
         <div class="container">
