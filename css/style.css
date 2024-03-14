@@ -154,7 +154,46 @@ a {
     background:var(--color-quinary);
     color: var(--color-font2);
 }
-.abrigos__selector{
+#carritos__selector{
     background:var(--color-quinary);
     color: var(--color-font2);
+}
+.purchases__container{
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    align-items: flex-start;
+    gap: 2em;
+    height: auto;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+.purchase__card{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    background:var(--color-secundary) ;
+}
+.purchase__card .product{
+    width: 12.375em;
+    height: 12.375em;
+}
+.purchase__card .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.purchase__footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    padding: 1em 3em;
 }
