@@ -10,25 +10,39 @@ body{
     display: grid;
     grid-template-columns: 20vw 80vw;
     grid-template-rows: 1fr;
+    background: var(--color-primary);
+
 }
 /*****MENU*****/
 .menu{
-    padding-top:3em ;
+    padding:1em 0 ;
     width: 100%;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     gap: 1em;
+
 }
 .menu ul {
+    padding-top: 1em;
     display: flex;
     flex-direction: column;
     gap: 1em;
     list-style: none;
 }
-
+.menu ul li i {
+    margin-right: .9em;
+}
+.menu ul li i,a {
+    color:var(--color-font);
+    text-decoration: none;
+    gap: .5em;
+}
+.menu .title {
+    font-size: 2em;
+}
 .car {
     margin-top: 10em;
 }
@@ -40,25 +54,33 @@ body{
     display: flex;
     flex-direction: column;
     width: 95%;
-    height: 95vh;
-    background: red;
+    height: 90vh;
+    background:var(--color-quinary);
+    margin-top: 5vh;
+    gap: 1em;
 
 }
+.container .title {
+    font-size: 2em;
+}
 .container .cards__container {
-    background: green;
+    /* background: green; */
     display: flex;
     flex-flow:row wrap ;
     overflow-y: scroll;
     align-items: center;
     gap: 2em;
-    height:100vh;
+    height:80vh;
     width:100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    /* padding: 1em 2em; */
 
 }
 .container .cards__container .card{
     background: blue;
     width: 310px;
-    height: 25.375em;
+    height: 22.375em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -67,18 +89,20 @@ body{
 }
 .container .cards__container .card img{
     width: 80%;
-    height: 70%;
+    height: 65%;
     object-fit: contain;
+    margin-top: 5%;
 }
 .container .cards__container .card .content__card {
-    border: 2px solid black;
+    border: 1px solid black;
     width: 100%;
     height: 30%;
     border-radius: 25px;
+    padding: .8em;
 }
-.container .cards__container .card .content__card {
-    border: 2px solid black;
-    width: 100%;
-    height: 30%;
-    border-radius: 25px;
+.container .cards__container .card .content__card .purchase{
+    display: flex;
+    margin-top: 1.5em;
+    flex-direction: row;
+    justify-content: space-between;
 }
