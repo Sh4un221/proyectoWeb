@@ -442,13 +442,15 @@ footer .title {
     font-weight: 600;
     padding-bottom: .2em;
     position: relative;
-
 }
-footer .title:after{
-    content:"";
+footer .title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 3em;
     height: 0.12em;
-    background: var(--color-primary);
+    background-color: var(--color-primary);
 }
 
 
